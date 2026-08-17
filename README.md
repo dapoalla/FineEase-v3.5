@@ -1,4 +1,4 @@
-# FinEase v3.0
+# FinEase v3.5
 
 A self-hosted PHP/MySQL business management tool for job-order-based businesses — track clients, job orders, a product catalogue, project surveys, transactions, tithes, and generate financial reports (P&L, balance sheet, cash flow) from one dashboard.
 
