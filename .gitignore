@@ -1,0 +1,47 @@
+# FinEase v3.0 - Git Ignore Rules
+# ========================================
+
+# Database credentials (NEVER commit real credentials)
+config/config.php
+config/configx.php
+
+# Backup SQL files (can be large / contain sensitive data)
+# NOTE: setup/schema.sql is real app source and must NOT be excluded here.
+backups/*.sql
+!backups/.gitkeep
+
+# User uploaded files (logos, signatures, receipts, catalogue photos, survey photos)
+# - these are user data / environment-specific, not app source
+uploads/logos/*
+uploads/signatures/*
+uploads/receipts/*
+uploads/catalogue_images/*
+uploads/survey_photos/*
+# Keep the directories themselves
+!uploads/logos/.gitkeep
+!uploads/signatures/.gitkeep
+!uploads/receipts/.gitkeep
+!uploads/catalogue_images/.gitkeep
+!uploads/survey_photos/.gitkeep
+
+# One-time debug / migration scripts (already deleted, but just in case)
+fix_*.php
+add_col.php
+reset_admin.php
+run_migrations_temp.php
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# PHP error log
+*.log
+error_log
+
+# Stray local backup artifacts (not part of the app)
+well-known (1)/
+well-known (1).zip
